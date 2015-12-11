@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<form action="friendreq1" method="post">
+
+
+<input type="text" name="dost" id="ruchla1" />
+
+</form>
+
+
+
+ 
+<form action="groupdb1" method="post">
+
+
+
+
+<br>
+<% 
+
+for (var i  in title12){ %>
+<p>
+
+<input type="checkbox" name= "<%= i %>" value="<%= i %>" ></input>
+<%= title12[i] %>
+
+
+
+</p>
+
+<%  }
+
+%>
+
+<input type="submit" value="sent friend request" id="ruchla1" name="ruchla1"/>
+    
+   
+    </form>
+
+
+
+
+</body>
+
+</html>

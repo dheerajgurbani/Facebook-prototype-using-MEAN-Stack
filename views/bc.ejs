@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+<body>
+ 
+<form action="groupdb" method="post">
+<h1>enter group name </h1>
+
+<input type="text" name="gname" id="abc"  ></input>
+<br>
+<h3><%= title12.length %></h3>
+<% 
+
+for (var i  in title12){ %>
+<p>
+<%= title13[i] %>
+
+<input type="checkbox" name= "<%= i %>" value="<%= title13[i] %>" ></input>
+<%= title12[i] %>
+
+
+
+</p>
+
+<%  }
+
+%>
+
+<input type="number" name="gno" value= "<%= title12.length %>" ></input>
+
+<input type="text" name="gname" id="abc"  ></input>
+
+
+<input type="submit" value="form a group" id="ruchla1" name="ruchla1"/>
+    
+   
+    </form>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+<link type="text/css" rel="stylesheet" href="stylesheets/style1.css" />
+
+
+
+</head>
+
+<body>
+
+<div class="headerx"></div>
+
+<div class="header">
+
+<form method="" action='searchFriend'>
+
+<h4 id="nameLoc"> </h4>
+
+<input type="text" name="search" id="searchtext">
+
+<a id="homeLink" href='/success'> Home </a>
+
+<a id="aboutLink" href='/about'> About </a>
+
+<a id="friend" href='/friendList'> Friends </a>
+
+<a id="logout" href='/logout'> Log Out </a>
+
+<a id="pendingReq" href='/pendingReq'> Pending Req </a>
+
+<input type="submit" name="searchFriend" id="searchFriend" value="search">
+
+
+</form>
+
+</div>
+
+
+<form method="post" action="/approveFriendRequest">
+
+<br><br><br><br><br><br>
+
+<% for(var i in resultSetName){ %>
+
+name: <%= resultSetName[i] %>
+
+<input type="submit" onclick="addFriend(<%= resultSetId[i] %>)" name=<%= resultSetName[i] %> value="Approve Request" id=<%= resultSetId[i] %> /> <br>
+
+<% } %>
+
+<input type="hidden" name="abc" id="abc" value=<%= resultSetId[i] %>></input>
+
+</form>
+
+
+
+</body>
+
+</html>
+

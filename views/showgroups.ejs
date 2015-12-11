@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Home page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>  
+  </head>
+  
+  <body>
+  <div class="headerx"></div>
+
+<div class="header">
+
+<form method="" action='searchFriend'>
+
+<h4 id="nameLoc">  </h4>
+
+<input type="text" name="search" placeholder="Search friends" id="searchtext">
+
+<a id="homeLink" href='/success'> Home </a>
+
+<a id="aboutLink" href='/about'> About </a>
+
+<a id="friend" href='/friendList'> Friends </a>
+
+<a id="logout" href='/logout'> Log Out </a>
+
+<a id="pendingReq" href='/pendingReq'> Pending Req </a>
+
+<input type="submit" name="searchFriend" id="searchFriend" value="search">
+
+
+</form>
+
+</div>
+  
+  <br><br><br><br><br>
+  
+  <div>
+
+      <ul class="navbar">
+
+      <br>
+
+        <li class="active"><a href="/aboutEdit">Edit About Detail<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li><br>
+
+        <li class="active"><a href="/about">About<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li><br>
+
+        <li ><a href="/creategroup">Create Group<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span></a></li><br>
+
+        <li ><a href="/showgroups">Show Groups<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-tags"></span></a></li><br>
+
+        <li ><a href="#">Pending Friend Request<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-tags"></span></a></li><br>
+
+      </ul>
+
+    </div>
+
+
+    
+    <div id="showData">
+    
+ <p> All your groups </p>
+<% for (var i  in y){ %>
+
+<br>
+<input type="submit" value="show all your Group members" id="<%= y[i] %>" onClick="fun(<%= y[i] %>)"/><%= y[i] %>
+
+
+<% } %>
+    
+
+</div
+<script>
+function fun(var id)
+{
+alert(id);
+}
+
+
+</script>
+
+    </body>
+ 
+</html>

@@ -1,8 +1,14 @@
 
 
 # Facebook
+I have created Facebook Protoype using Node JS which is a Javascript Framework.
+I have implemented 5 basic functionalities in this project.
 
-
+1. Sign Up & Sign in for users.
+2. Sending and Accepting Friend Request.
+3. Creating groups and adding members to it.
+4. Uploading status and viewing friend's status (Newsfeed)
+5. User's about page.
 
 ## Usage
 
